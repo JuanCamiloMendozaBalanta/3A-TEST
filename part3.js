@@ -31,6 +31,7 @@ const three = () => {
     [0, 1, 2, 3, 4, 5, 6],
     [0, 1, 2, 3, 4, 5, 6]
   ];
+  let res;
   for (let i = 0; i < a.length; i++) {
     for (let j = i + 1; j < a[i].length; j++) {
       res += `${a[i]} - ${a[j]} /n`;
