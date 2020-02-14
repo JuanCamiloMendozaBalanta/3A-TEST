@@ -24,9 +24,13 @@ const two = () => {
   }
   return res;
 };
+console.log('===> two:', two());
 
 const three = () => {
-  const a = [[0, 1, 2, 3, 4, 5, 6][(0, 1, 2, 3, 4, 5, 6)]];
+  const a = [
+    [0, 1, 2, 3, 4, 5, 6],
+    [0, 1, 2, 3, 4, 5, 6]
+  ];
   for (let i = 0; i < a.length; i++) {
     for (let j = i + 1; j < a[i].length; j++) {
       res += `${a[i]} - ${a[j]} /n`;
@@ -35,6 +39,7 @@ const three = () => {
 
   return res;
 };
+console.log('===> three:', three());
 
 const four = num => {
   const numbers = {
